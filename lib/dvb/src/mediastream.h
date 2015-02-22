@@ -16,6 +16,22 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-#include "dvb.h"
+#ifndef MEDIASTREAM_H
+#define MEDIASTREAM_H
 
-Dvb::Dvb() {}
+#include "dvb_global.h"
+
+#include <QObject>
+
+class DVBSHARED_EXPORT MediaStream : public QObject {
+  Q_OBJECT
+public:
+  explicit MediaStream(QObject *parent = 0);
+  ~MediaStream();
+
+signals:
+
+public slots:
+};
+
+#endif // MEDIASTREAM_H

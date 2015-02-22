@@ -16,6 +16,22 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-#include "dvb.h"
+#ifndef MEDIAFRAMEDESCRIPTION_H
+#define MEDIAFRAMEDESCRIPTION_H
 
-Dvb::Dvb() {}
+#include "dvb_global.h"
+
+#include <QObject>
+
+class DVBSHARED_EXPORT MediaFrameDescription : public QObject {
+  Q_OBJECT
+public:
+  explicit MediaFrameDescription(QObject *parent = 0);
+  ~MediaFrameDescription();
+
+signals:
+
+public slots:
+};
+
+#endif // MEDIAFRAMEDESCRIPTION_H

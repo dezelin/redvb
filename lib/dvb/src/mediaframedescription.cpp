@@ -16,6 +16,9 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-#include "dvb.h"
+#include "mediaframedescription.h"
 
-Dvb::Dvb() {}
+MediaFrameDescription::MediaFrameDescription(QObject *parent)
+    : QObject(parent) {}
+
+MediaFrameDescription::~MediaFrameDescription() {}

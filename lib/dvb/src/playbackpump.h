@@ -16,6 +16,22 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-#include "dvb.h"
+#ifndef PLAYBACKPUMP_H
+#define PLAYBACKPUMP_H
 
-Dvb::Dvb() {}
+#include "dvb_global.h"
+
+#include <QObject>
+
+class DVBSHARED_EXPORT PlaybackPump : public QObject {
+  Q_OBJECT
+public:
+  explicit PlaybackPump(QObject *parent = 0);
+  ~PlaybackPump();
+
+signals:
+
+public slots:
+};
+
+#endif // PLAYBACKPUMP_H

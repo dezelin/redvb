@@ -16,6 +16,22 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-#include "dvb.h"
+#ifndef MEDIAFILE_H
+#define MEDIAFILE_H
 
-Dvb::Dvb() {}
+#include "dvb_global.h"
+
+#include <QObject>
+
+class DVBSHARED_EXPORT MediaFile : public QObject {
+  Q_OBJECT
+public:
+  explicit MediaFile(QObject *parent = 0);
+  ~MediaFile();
+
+signals:
+
+public slots:
+};
+
+#endif // MEDIAFILE_H

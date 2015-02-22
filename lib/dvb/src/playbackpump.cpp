@@ -16,6 +16,8 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-#include "dvb.h"
+#include "playbackpump.h"
 
-Dvb::Dvb() {}
+PlaybackPump::PlaybackPump(QObject *parent) : QObject(parent) {}
+
+PlaybackPump::~PlaybackPump() {}

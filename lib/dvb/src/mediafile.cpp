@@ -16,6 +16,8 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-#include "dvb.h"
+#include "mediafile.h"
 
-Dvb::Dvb() {}
+MediaFile::MediaFile(QObject *parent) : QObject(parent) {}
+
+MediaFile::~MediaFile() {}
